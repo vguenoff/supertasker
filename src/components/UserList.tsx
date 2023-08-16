@@ -1,8 +1,8 @@
-import CreateUser from './create-user';
-import Task from './user';
+import CreateUser from './CreateUser'
+import Task from './User'
 
 const UserList = () => {
-  const users: User[] = [];
+  const users: User[] = []
 
   return (
     <section className="user-list">
@@ -11,7 +11,7 @@ const UserList = () => {
         <Task key={user.id} user={user} />
       ))}
     </section>
-  );
-};
+  )
+}
 
-export default UserList;
+export default UserList

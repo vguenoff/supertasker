@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const CreateTask = () => {
-  const [newTaskTitle, setnewTaskTitle] = useState('');
+  const [newTaskTitle, setnewTaskTitle] = useState('')
 
   return (
     <form
       className="create-task"
       onSubmit={(e) => {
-        e.preventDefault();
+        e.preventDefault()
       }}
     >
       <label htmlFor="new-task-title">
@@ -23,7 +23,7 @@ const CreateTask = () => {
       </label>
       <button type="submit">Create Task</button>
     </form>
-  );
-};
+  )
+}
 
-export default CreateTask;
+export default CreateTask

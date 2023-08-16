@@ -1,15 +1,15 @@
-import { useContext } from 'react';
-import ApplicationContext from '../context';
+import { useContext } from 'react'
+import ApplicationContext from '../context'
 
 type TaskProps = {
-  task: Task;
-};
+  task: Task
+}
 
 const Task = ({ task }: TaskProps) => {
-  const { columns, users } = useContext(ApplicationContext);
+  const { columns, users } = useContext(ApplicationContext)
 
-  const status = columns.find((column) => column.id === task.column)?.title;
-  const user = users.find((user) => user.id === task.user);
+  const status = columns.find((column) => column.id === task.column)?.title
+  const user = users.find((user) => user.id === task.user)
 
   return (
     <article className="task">
@@ -28,7 +28,7 @@ const Task = ({ task }: TaskProps) => {
         </p>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default Task;
+export default Task

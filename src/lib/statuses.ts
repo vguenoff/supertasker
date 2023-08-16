@@ -5,4 +5,4 @@ export const statuses = [
   'Verifying',
   'Waiting for Deployment',
   'Deployed',
-] as const;
+] as const

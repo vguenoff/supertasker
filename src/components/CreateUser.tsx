@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const CreateUser = () => {
-  const [realName, setRealName] = useState('');
-  const [alterEgo, setAlterEgo] = useState('');
+  const [realName, setRealName] = useState('')
+  const [alterEgo, setAlterEgo] = useState('')
 
   return (
     <form
       className="create-user"
       onSubmit={(e) => {
-        e.preventDefault();
+        e.preventDefault()
       }}
     >
       <label htmlFor="new-user-real-name">
@@ -36,7 +36,7 @@ const CreateUser = () => {
 
       <button type="submit">Create User</button>
     </form>
-  );
-};
+  )
+}
 
-export default CreateUser;
+export default CreateUser

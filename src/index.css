@@ -37,7 +37,7 @@ input[type='reset'] {
 
 button.small,
 input.small {
-  @apply whitespace-nowrap py-0 px-2 text-xs;
+  @apply whitespace-nowrap px-2 py-0 text-xs;
 }
 
 button.destructive,
